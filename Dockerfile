@@ -13,7 +13,7 @@ ENV JAVAJAR VCheckerApp-0.0.1-SNAPSHOT-jar-with-dependencies.jar
 
 # Copying the contents of the current directory into /usr/src/mymaven/ (i.e. the jar file mainly)
 
-ADD $PWD /usr/src/mymaven/
+COPY $PWD /usr/src/mymaven/
 
 # Making mymaven our working directory (on which we also have the jar file)
 
